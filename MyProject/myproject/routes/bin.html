@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block body %}
+<p align="left" >Корзина</p>
+<form action="/buy.html" method="POST">
+    {{body}}
+    <input align="right" type="submit" name="BUY" value="Купить">
+</form>
+{% endblock %}

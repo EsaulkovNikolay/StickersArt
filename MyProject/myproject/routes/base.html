@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+	<link href="/static/style.css" rel="stylesheet">
+	<meta http-equiv="Content=Type" content="text/html; charset=windows-1251" >
+	<title>STICKERS Atr Shop</title>
+	{% block head %}{% endblock %}
+</head>
+<body style="height: 100%;">
+	<nav>
+		<a href="/">Главная</a>
+		<a href="/history.html">История</a>
+		<a href="/contacts.html">Контакты</a>
+		<a href="/bin.html">Корзина</a>
+		<a href="/catalog.html">Каталог</a>
+		<a href="/authorisation.html">Авторизация</a>
+	</nav>
+	<table style="height: 100%;" width="100%";  cellpadding="5"; cellspacing="0">
+		<tr>
+			<td id="layer1"></td>
+			<td id="body">{% block body %}{% endblock %}</td>
+			<td id="layer2">Колонка 3</td>
+		</tr>
+	</table>
+</body>
+</html>

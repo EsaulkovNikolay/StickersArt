@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body %}
+<form action="login.html" method="POST">
+    Имя<br>
+    <input type="text" name="First_Name" required><br>
+
+    Фамилия<br>
+    <input type="text" name="Last_Name" required><br>
+
+    Адрес электронной почты<br>
+    <input type="text" name="Email" required><br>
+
+    Контактный телефон<br>
+    <input type="text" name="Contact_Phone" required><br>
+
+    Адрес<br>
+    <input type="text" name="Address"><br>
+
+    Пароль<br>
+    <input type="password" name="Password"><br>
+    <br>
+    <input type="submit" name="SUBMIT" value="Регистрация">
+</form>
+{% endblock %}

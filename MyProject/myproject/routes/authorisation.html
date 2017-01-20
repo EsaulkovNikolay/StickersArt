@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+<script type="text/python">
+
+</script>
+{% endblock %}
+{% block body %}
+<form action="/login.html" method="POST">
+    {{error}}
+    Адрес электронной почты<br>
+    <input type="text" name="Email" required><br>
+    Пароль<br>
+    <input type="password" name="Password" required><br>
+    <br>
+    <input type="submit" name="BUTTON" value="Войти">
+</form>
+<form action="/logout.html" method="POST">
+    <input type="submit" name="LOGOUT" value="Выйти">
+</form>
+<a href="/registration.html">Регистрация</a>
+{% endblock %}
