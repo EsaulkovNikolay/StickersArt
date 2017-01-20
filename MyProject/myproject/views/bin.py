@@ -74,7 +74,7 @@ def GenerateBinItems(request):
         if (i+1)%2==0:
             blocks+="<br>"
 
-    blocks+="<br>Материал<br><select name='mat' size='3'>"
+    blocks+="<br>Материал<br><select name='mat' size='3' required>"
 
     materials=conn.execute(dataBase.Material_Table.select()).fetchall()
     for mat in materials:
