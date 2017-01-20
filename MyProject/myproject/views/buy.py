@@ -8,7 +8,7 @@ def Buy_Page(request):
         user=request.authenticated_userid
 
         book=conn.execute(dataBase.Cheque_Table.select().where(dataBase.Cheque_Table.c.Complited==False).where(
-            not dataBase.Cheque_Table.c.Client_ID==user
+            dataBase.Cheque_Table.c.Client_ID==user
         )).fetchone().Book_ID
 
 
