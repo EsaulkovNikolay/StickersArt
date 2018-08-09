@@ -1,0 +1,33 @@
+body {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	background: black;
+	color: black;
+	}
+l {
+			display:table-row;
+		}
+
+		nav { background-color: white; color: navy; margin-left:-20%; margin-right:-20%}
+		a { color:blue;  margin-left:8%; font-size:large }
+		#layer1 {
+		margin-right:80%;
+		background-color: grey;
+		height:100%;
+		width:20%;
+		display:table-cell;
+		}
+		#body {
+		background-color: black;
+		color:white; margin-left:20%;
+		margin-right:20%;
+		height:100%
+		width:60%;
+		display:table-cell;
+		}
+		#layer2 {
+		margin-left: 80%;
+		background-color: grey;
+		height:100%
+		width:20%;
+		display:table-cell;
+		}
